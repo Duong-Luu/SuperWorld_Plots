@@ -23,8 +23,9 @@ library(rnaturalearthdata)
 library(plotly)
 library(usmap)
 library(lubridate)
+install.packages("rgeos")
 
-plots_sold = read_csv("C:/Users/Tziporah/SuperWorld_Plot_Recommendation/data/plots_sold.csv")[-1]
+plots_sold = read_csv("C:/Users/onlyd/Desktop/SW_plot/data/plots_sold.csv")[-1]
 plots_sold$code = toupper(plots_sold$code)
 
 us_plots = plots_sold[which(plots_sold$code == "US"),]
