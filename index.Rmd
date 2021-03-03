@@ -28,6 +28,7 @@ install.packages("rgeos")
 plots_sold = read_csv("C:/Users/onlyd/Desktop/SW_plot/data/plots_sold.csv")[-1]
 plots_sold$code = toupper(plots_sold$code)
 
+
 us_plots = plots_sold[which(plots_sold$code == "US"),]
 us_address = us_plots$address
 
